@@ -131,15 +131,13 @@ const PertTable: FC<Props> = ({ forwardRef }) => {
         <table border={1} cellPadding={5}>
           <thead>
             <tr>
-              <th colSpan={6}>Task</th>
+              <th>Task</th>
               <th>Estimate</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td colSpan={6}>
-                Analysis/Solution Design, Scoping and Documenting
-              </td>
+              <td>Analysis/Solution Design, Scoping and Documenting</td>
               <td>{timeString(scopingMinutes)}</td>
             </tr>
           </tbody>
@@ -150,7 +148,7 @@ const PertTable: FC<Props> = ({ forwardRef }) => {
           <table border={1} cellPadding={5}>
             <thead>
               <tr>
-                <th colSpan={3}>Task</th>
+                <th>Task</th>
                 <th>
                   Optimistic <br />
                   Estimate
@@ -183,7 +181,7 @@ const PertTable: FC<Props> = ({ forwardRef }) => {
                     likelyMinutes !== 0 &&
                     pessimisticMinutes !== 0 ? (
                       <Fragment>
-                        <td colSpan={3}>{task}</td>
+                        <td>{task}</td>
                         <td>{timeString(optimisticMinutes)}</td>
                         <td>{timeString(likelyMinutes)}</td>
                         <td>{timeString(pessimisticMinutes)}</td>
@@ -198,7 +196,7 @@ const PertTable: FC<Props> = ({ forwardRef }) => {
           <table border={1} cellPadding={5}>
             <thead>
               <tr>
-                <th colSpan={3}>Task</th>
+                <th>Task</th>
                 <th>
                   Optimistic <br />
                   Estimate
@@ -219,7 +217,7 @@ const PertTable: FC<Props> = ({ forwardRef }) => {
             </thead>
             <tbody>
               <tr>
-                <td colSpan={3}>
+                <td>
                   <strong>Total Development Tasks Time</strong>
                 </td>
                 <td>
@@ -273,7 +271,7 @@ const PertTable: FC<Props> = ({ forwardRef }) => {
                 />
               )}
               <tr>
-                <td colSpan={3}>
+                <td>
                   <strong>Total Estimate, including Analysis effort</strong>
                 </td>
                 <td>

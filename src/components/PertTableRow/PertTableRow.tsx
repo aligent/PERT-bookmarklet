@@ -35,7 +35,7 @@ const PertTableRow: FC<Props> = ({ label, percent, pertMinutes, min = 0 }) => {
 
   return (
     <tr>
-      <td colSpan={3}>{label}</td>
+      <td>{label}</td>
       <td>{timeString(optimisticPercent)}</td>
       <td>{timeString(likelyPercent)}</td>
       <td>{timeString(pessimisticPercent)}</td>
